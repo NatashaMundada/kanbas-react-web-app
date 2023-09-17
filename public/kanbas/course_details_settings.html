@@ -58,10 +58,15 @@
                     <td>
                         <ul>
                             <li><a href="course_details_settings.html">Course Details</a></li>
+                            <li><a href="#">Sections</a></li>
                             <li><a href="navigation.html">Navigation</a></li>
+                            <li><a href="#">Apps</a></li>
+                            <li><a href="#">Feature Options</a></li>
+                            <li><a href="#">Integrations</a></li>
                         </ul>
                     </td>
                     <td>
+                        <h4>Image:</h4>
                         <h4>Name:</h4>
                         <h4>Course Code:</h4>
                         <h4>Blueprint Course:</h4>
@@ -70,9 +75,27 @@
                         <h4>SIS ID:</h4>
                         <h4>Sub Account:</h4>
                         <h4>Term:</h4>
-                        <h4>Participation:</h4>
+                        <h4>Participation:</h4><br/><br/><br/>
+                        <br/><br/><br/>
+                        <br/><br/><br/>
+                        <br/><br/><br/>
+                        <br/><br/>
+                        <h4>Default due time:</h4>
+                        <h4>Language:</h4><br/>
+                        <h4>File Storage:</h4>
+                        <h4>Large Course:</h4>
+                        <h4>Grading Scheme:</h4>
+                        <h4>License:</h4>
+                        <h4>File Copyright:</h4>
+                        <h4>Visibility:</h4><br/><br/>
+                        <h4>Format:</h4>
+                        <h4>Mastery Paths:</h4>
+                        <h4>Description:</h4>
                     </td>
                     <td>
+                        <br/>
+                        <label for="files" class="btn">Choose Image</label>
+                        <input id="files" type="file" style="visibility:hidden;" name="Choose Image"/><br/>
                         <p>CS 4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]<br/><br/>
                         CCS.4550.12631.202410<br/><br/></p>
                         <p>No</p>
@@ -88,7 +111,7 @@
                         <select id="participation">
                             <option selected value="
                             Term">Term</option>
-                        </select><br/>
+                        </select>
                         <p>Course participation is limited to term start and end dates</p>
                         <label for="startdate"><h3>Start</h3></label>
                         <input type="date"
@@ -101,28 +124,13 @@
                         <label for="startdaterestrict"> Restrict students from viewing course before term start date</label><br><br/>
                         <input type="checkbox" id="text" name="text" value="enddaterestrict">
                         <label for="enddaterestrict"> Restrict students from viewing course before term end date</label><br><br/>
-                    </td>
-                    <td>
-                        <h4>Default due time:</h4>
-                        <h4>Language:</h4><br/>
-                        <h4>File Storage:</h4>
-                        <h4>Large Course:</h4>
-                        <h4>Grading Scheme:</h4>
-                        <h4>License:</h4>
-                        <h4>File Copyright:</h4>
-                        <h4>Visibility:</h4><br/><br/>
-                        <h4>Format:</h4>
-                        <h4>Mastery Paths:</h4>
-                        <h4>Description:</h4>
-                    </td>
-                    <td>
-                        <br/>
+                    
                         <select id="duetime">
                             <option selected value="
                             Account default(11:59 pm)">Account default(11:59 pm)</option>
                         </select><br/>
                         <small>This infleunces the user interface for setting due dates. 
-                            It does not change the time due for any existing assignments</small><br/>
+                            It does not change the time due for any existing assignments</small><br/><br/>
 
                         <select id="language">
                             <option selected value="
@@ -135,7 +143,7 @@
                         <input type="checkbox" id="text" name="text" value="speedgrader">
                         <label for="speedgrader"> Launch SpeedGrader Filtered by Student Group</label><br><br/>
                         <input type="checkbox" id="text" name="text" value="gradingscheme">
-                        <label for="speedgrader"> Enable course grading scheme</label><br><br/><br/>
+                        <label for="speedgrader"> Enable course grading scheme</label><br><br/>
                         <select id="license">
                             <option selected value="
                             Private(Copyrighted)">Private(Copyrighted)</option>
@@ -153,7 +161,7 @@
                         </select><br/>
                         <input type="checkbox" id="text" name="text" value="visibilitycheckbox" disabled>
                         <label for="visibilitycheckbox"> Include this course in the public course index.</label><br><br/>
-
+                        <br/>
                         <select id="oncampus">
                         <option selected value="
                         On-Campus">On-Campus</option>
