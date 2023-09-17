@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Course Details
+        </title>
+    </head>
+    <body>
+        <table width="100%">
+            <thead>
+                <tr valign="top">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr valign="top">
+                    <td>
+                        <ul>
+                            <li><a href="account.html">Account</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Studio</a></li>
+                            <li><a href="#">Commons</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="course_content.html">Home</a></li>
+                            <li><a href="#">Modules</a></li>
+                            <li><a href="#">Piazza</a></li>
+                            <li><a href="#">Zoom Meetings</a></li>
+                            <li><a href="../kanbas/assignments/index.html">Assignments</a></li>
+                            <li><a href="#">Quizzes</a></li>
+                            <li><a href="grades.html">Grades</a></li>
+                            <li><a href="#">People</a></li>
+                            <li><a href="#">Panopto Video</a></li>
+                            <li><a href="#">Discussions</a></li>
+                            <li><a href="#">Announcements</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Files</a></li>
+                            <li><a href="#">Rubrics</a></li>
+                            <li><a href="#">Outcomes</a></li>
+                            <li><a href="#">Collaborations</a></li>
+                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="settings.html">Settings</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="course_details_settings.html">Course Details</a></li>
+                            <li><a href="navigation.html">Navigation</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h4>Name:</h4>
+                        <h4>Course Code:</h4>
+                        <h4>Blueprint Course:</h4>
+                        <h4>Course Template:</h4>
+                        <h4>Time Zone:</h4>
+                        <h4>SIS ID:</h4>
+                        <h4>Sub Account:</h4>
+                        <h4>Term:</h4>
+                        <h4>Participation:</h4>
+                    </td>
+                    <td>
+                        <p>CS 4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]<br/><br/>
+                        CCS.4550.12631.202410<br/><br/></p>
+                        <p>No</p>
+                        <input type="checkbox" id="text" name="text" value="template">
+                        <label for="template"> Enable course as a Course Template</label><br><br/>
+                        <select id="timezone">
+                            <option selected value="
+                            Eastern Time(US & Canada) (-05.00/-04.00)">Eastern Time(US & Canada) (-05.00/-04.00)</option>
+                        </select>
+                        <p>CCS.4550.12631.202410<br/><br/>
+                        <a href="#">CS Undergrad</a><br/><br/>
+                        02410_1 Fall 2023 Semester Full Term</p><br/>
+                        <select id="participation">
+                            <option selected value="
+                            Term">Term</option>
+                        </select><br/>
+                        <p>Course participation is limited to term start and end dates</p>
+                        <label for="startdate"><h3>Start</h3></label>
+                        <input type="date"
+                            id="field-startdate"/><br/>
+                        <label for="enddate"><h3>End</h3></label>
+                        <input type="date"
+                            id="field-enddate"
+                            value=""/><br/><br/>
+                        <input type="checkbox" id="text" name="text" value="startdaterestrict">
+                        <label for="startdaterestrict"> Restrict students from viewing course before term start date</label><br><br/>
+                        <input type="checkbox" id="text" name="text" value="enddaterestrict">
+                        <label for="enddaterestrict"> Restrict students from viewing course before term end date</label><br><br/>
+                    </td>
+                    <td>
+                        <h4>Default due time:</h4>
+                        <h4>Language:</h4><br/>
+                        <h4>File Storage:</h4>
+                        <h4>Large Course:</h4>
+                        <h4>Grading Scheme:</h4>
+                        <h4>License:</h4>
+                        <h4>File Copyright:</h4>
+                        <h4>Visibility:</h4><br/><br/>
+                        <h4>Format:</h4>
+                        <h4>Mastery Paths:</h4>
+                        <h4>Description:</h4>
+                    </td>
+                    <td>
+                        <br/>
+                        <select id="duetime">
+                            <option selected value="
+                            Account default(11:59 pm)">Account default(11:59 pm)</option>
+                        </select><br/>
+                        <small>This infleunces the user interface for setting due dates. 
+                            It does not change the time due for any existing assignments</small><br/>
+
+                        <select id="language">
+                            <option selected value="
+                            Not set(User configurable, defaults to English)">Not set(User configurable, defaults to English)</option>
+                        </select><br/>
+                        <small>This will override any user/system language prefernces. This is only recommended
+                            for foreign language courses.
+                        </small><br/><br/>
+                        <p style="font-size: 15px;">10000 megabytes</p>
+                        <input type="checkbox" id="text" name="text" value="speedgrader">
+                        <label for="speedgrader"> Launch SpeedGrader Filtered by Student Group</label><br><br/>
+                        <input type="checkbox" id="text" name="text" value="gradingscheme">
+                        <label for="speedgrader"> Enable course grading scheme</label><br><br/><br/>
+                        <select id="license">
+                            <option selected value="
+                            Private(Copyrighted)">Private(Copyrighted)</option>
+                        </select><br/><br/>
+                        <input type="checkbox" id="text" name="text" value="filecopyright">
+                        <label for="filecopyright"> Copyright and license information must be provided for files 
+                            before they are published.
+                        </label><br>
+
+                        <p style="font-size: 15px;">If you need to make your course public please contact your 
+                            administrator/support</p>
+                        <select id="visibility" disabled>
+                            <option selected value="
+                            Course">Course</option>
+                        </select><br/>
+                        <input type="checkbox" id="text" name="text" value="visibilitycheckbox" disabled>
+                        <label for="visibilitycheckbox"> Include this course in the public course index.</label><br><br/>
+
+                        <select id="oncampus">
+                        <option selected value="
+                        On-Campus">On-Campus</option>
+                        </select><br/><br/>
+                        
+                        <input type="checkbox" id="text" name="text" value="masterypaths">
+                        <label for="masterypaths"> Enable individual learning paths 
+                            for students based on assessment.</label><br><br/>
+                        
+                        <form id="textarea">
+                            <textarea rows="5"></textarea>
+                        </form>
+                        <small><a href="#">more options</a></small><br/>
+
+                        <button type="submit" style="float:right">Update Course Details</button><br/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

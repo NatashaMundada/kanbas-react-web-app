@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grades</title>
+     </head>
+    <table width="100%">
+        <thead>
+            <tr valign="top">
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr valign="top">
+                <td>
+                    <ul>
+                        <li><a href="account.html">Account</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Studio</a></li>
+                            <li><a href="#">Commons</a></li>
+                            <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="course_content.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="../kanbas/assignments/index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <select id="gradebook">
+                        <option selected value="Gradebook">Gradebook</option>
+                    </select>
+                    <button type="button">Import</button>
+                    <select id="export">
+                        <option selected value="Export">Export</option>
+                    </select>
+                    <button type="button">Configure</button>
+                    <h3>Student Names</h3>
+                    <input type="name"
+                            placeholder="Search Students"/><br/>
+                    <h3>Assignment Names</h3>
+                    <input type="assignment"
+                            placeholder="Search Assignments"/><br/><br/>
+                    <button type="button">Apply Filters</button>
+
+                    <br/><br/>
+                    <table border="1" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>A1 Setup<br/>Out of 100</th>
+                                <th>A2 HTML<br/>Out of 100</th>
+                                <th>A3 CSS<br/>Out of 100</th>
+                                <th>A4 BOOTSTRAP<br/>Out of 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Harry Potter</td>
+                                <td><input type="number" name ="marks" placeholder=100 value="100"/></td>
+                                <td>100</td>
+                                <td>99</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>Hermione Granger</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Ron Weasley</td>
+                                <td>100</td>
+                                <td>95</td>
+                                <td><input type="number" name ="marks" placeholder=97 value="97"/></td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Luna Lovegood</td>
+                                <td>100</td>
+                                <td>97</td>
+                                <td>95</td>
+                                <td><input type="number" name ="marks" placeholder=99 value="99"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</html>
