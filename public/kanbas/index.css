@@ -1,0 +1,385 @@
+.sidebar {
+    height: 100%;
+    width: 85px;
+    position: fixed;
+    background-color: #111;
+    left:0;
+    margin: 0;
+    padding: 15px;
+}
+
+.sidebar a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.sidebar i {
+    color: white;
+}
+
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-navigation{
+    margin-left:100px;
+    width: 190px;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    padding-left: 20px;
+}
+
+.account-navigation a{
+    text-decoration: none;
+    color: rgb(216, 7, 7);
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin:15px;
+    font-weight: 250;
+}
+
+.heading-profile{
+    margin-left:100px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.account-navigation a:hover{
+    text-decoration: none;
+    color: rgb(216, 7, 7);;
+}
+
+.link-bg-color-selected{
+    background-color: white;
+    display: inline;
+    width: 149%;
+}
+
+.link-bg-color-selected a{
+    color: red;
+}
+
+.link-bg-color-selected a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.main-profile {
+    margin-left:400px;
+    width: 800px;
+    height: 100%;
+    position: fixed;
+    background-color:white;
+    padding-left: 20px;
+    position: absolute;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.profile span{
+    color: black;
+}
+
+.profile a{
+    text-decoration: none;
+}
+
+.selected-profile a{
+    color: black;
+}
+
+.selected-profile a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.edit-sidebar{
+    margin-left:400px;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    padding-left: 20px;
+}
+
+.course-navigation{
+    margin-left:100px;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    padding-left: 20px;
+}
+
+.course-navigation a{
+    text-decoration: none;
+    color: rgb(216, 7, 7);
+    font-size: 17px;
+}
+
+.course-navigation a:hover{
+    text-decoration: none;
+    color: rgb(216, 7, 7);
+    font-size: 17px;
+}
+
+.assignment-heading{
+    margin-left:100px;
+    display: flex;
+    padding-left: 20px;
+}
+
+
+
+.assignment-navigation{
+    margin-left:100px;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    padding-left: 20px;
+}
+
+.assignment-navigation a{
+    text-decoration: none;
+    color: rgb(216, 7, 7);
+    font-size: 17px;
+}
+
+.assignment-navigation a:hover{
+    text-decoration: none;
+    color:  rgb(216, 7, 7);
+}
+
+.assignment-info{
+    padding-left: 20px;
+    display: flex;
+}
+
+.main-assignment-page {
+    margin-left: 380px;
+}
+
+.assignment-list {
+    margin-left: 380px;
+    margin-right: 40px;
+}
+
+.assignment-list a:hover{
+    color: black;
+}
+
+.custom-list-group{
+    border-radius: 0;
+}
+
+.custom-list-group .list-group-item{
+    border-radius: 0;
+}
+
+.gardes-table{
+    margin-left:400px;
+    position: fixed;
+}
+
+.settings-tabs a{
+    color: rgb(216, 7, 7);
+    text-decoration: none;
+}
+
+.settings-tabs a:hover {
+    color: rgb(216, 7, 7);
+    text-decoration: none;
+}
+
+.settings-selected a{
+    color: black;
+    text-decoration: none;
+}
+
+.border-image{
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 15px;
+    padding-right: 40px;
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.border-edit-assignment{
+    margin-left: 15px;
+    padding-right: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 500px;
+}
+
+
+.assignment-text-field {
+    width: 400px; 
+    border: 1px solid rgb(216, 211, 211); 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hyperlink-list {
+    text-decoration: none;
+    color: red;
+}
+
+.home-navigation{
+    margin-left:100px;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    padding-left: 20px;
+}
+
+.home-navigation a{
+    text-decoration: none;
+    color: rgb(216, 7, 7);
+    font-size: 17px;
+}
+
+.home-navigation a:hover{
+    text-decoration: none;
+    color:  rgb(216, 7, 7);
+}
+
+.home-navigation-big-screen{
+    margin-left:100px;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    padding-left: 20px;
+}
+
+.home-navigation-big-screen a{
+    text-decoration: none;
+    color: rgb(216, 7, 7);
+    font-size: 17px;
+}
+
+.home-navigation-big-screen a:hover{
+    text-decoration: none;
+    color:  rgb(216, 7, 7);
+}
+
+.home-heading{
+    margin-left:100px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.home-heading-big-screen{
+    margin-left:70px;
+    display: flex;
+    padding-left: 20px;
+    position: absolute;
+}
+
+.course-content-list{
+    margin-left: 320px;
+    width: 56%;
+    position: absolute;
+}
+
+.horizontal-bar{
+    background-color: #111;
+    top: 0;
+    width: 70%;
+    position: absolute;
+    margin-left: 100px;
+    height: 10%;
+    display: inline;
+    flex-direction: column;
+}
+
+.horizontal-bar-small{
+    background-color: #111;
+    top: 0;
+    width: 80%;
+    position: absolute;
+    margin-left: 90px;
+    height: 10%;
+    display: inline;
+}
+
+.horizontal-bar-small-small{
+    background-color: #111;
+    top: 0;
+    width: 60%;
+    position: absolute;
+    margin-left: 90px;
+    height: 10%;
+    display: inline;
+}
+
+.border-dashboard{
+    margin-left: 100px;
+    margin-right: 200px;
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-course-bar{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.small-course-bar a{
+    color: red;
+    text-decoration: none;
+}
+
+.small-course-bar i{
+    color: red;
+}
+
+#myInput {
+    box-sizing: border-box;
+    background-image: url('../images/searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 90%;
+    height: 10%;
+  }
