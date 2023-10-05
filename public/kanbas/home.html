@@ -3,17 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <title>Kanbas Navigation</title>
-     </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet"/>
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    </head>
 
-     <ul>
-         <li><a href="account.html">Account</a></li>
-         <li><a href="#">Dashboard</a></li>
-         <li><a href="courses.html">Courses</a></li>
-         <li><a href="#">Calendar</a></li>
-         <li><a href="#">Inbox</a></li>
-         <li><a href="#">History</a></li>
-         <li><a href="#">Studio</a></li>
-         <li><a href="#">Commons</a></li>
-         <li><a href="#">Help</a></li>
-     </ul>
+    <body>
+        <div class="sidebar">
+            <div>
+                <img src="images/northeastern-logo.jpeg" width="70" height="75">
+            </div>
+            <a href="profile/index.html">
+                <div class="icon-list">
+                    <i class="fa fa-user fa-1x mb-1" aria-hidden="true" style="color:  #d8220e;"></i>
+                    <span>Account</span>
+                </div>
+            </a>
+            <a href="dashboard.html">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-gauge fa-1x mb-1" style="color: #d8220e;"></i>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <a href="course_content.html">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-book fa-1x mb-1" style="color: #d8220e;"></i>
+                    <span>Courses</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-calendar-days fa-1x mb-1" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Calendar</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-circle-arrow-right fa-1x mb-2" style="color: #d8220e;"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Help</span>
+                </div>
+            </a>
+
+        </div>
+    </body>
 </html>

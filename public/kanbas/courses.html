@@ -3,50 +3,181 @@
     <head>
         <meta charset="UTF-8">
         <title>Course Navigation</title>
-     </head>
-    <table width="100%">
-        <thead>
-            <tr valign="top">
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr valign="top">
-                <ul>
-                    <td>
-                        <li><a href="account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                    </td>
-                    <td>
-                        <li><a href="course_content.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="../kanbas/assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                    </td>
-                </ul>
-            </tr>
-        </tbody>
-    </table>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet"/>
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div>
+                <img src="images/northeastern-logo.jpeg" width="70" height="75">
+            </div>
+            <a href="../kanbas/profile/index.html">
+                <div class="icon-list">
+                    <i class="fa fa-user fa-1x" aria-hidden="true" style="color:  #d8220e; margin-bottom: 5px;"></i>
+                    <span>Account</span>
+                </div>
+            </a>
+            <a href="dashboard.html">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <div class="link-bg-color-selected row">
+                <a href="course_content.html">
+                    <span class="fas fa-light fa-book fa-1x" style="color: black; margin-bottom: 5px;"></span>
+                    <span>Courses</span>
+                </a>
+            </div>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Calendar</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Help</span>
+                </div>
+            </a>
+        </div>
+        <div class="course-navigation">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">CS5610.11550.202410</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <div class="selected-profile" style="border-left: solid; border-color: black; border-width: medium; ">
+                <a href="course_content.html">
+                    <div class="nav-list">
+                        <span>Home</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#">
+                <div class="nav-list">
+                    <span style="margin-right: 8px;">Modules</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Piazza</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Zoom Meetings</span>
+                </div>
+                
+            </a>
+            
+            <a href="../kanbas/assignments/index.html">
+                <div class="nav-list">
+                    <span>Assignments</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Quizzes</span>
+                </div>
+                
+            </a>
+            <a href="grades.html">
+                <div class="nav-list">
+                    <span>Grades</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>People</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Panopto Video</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Discussions</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Announcements</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Pages</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Files</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Rubrics</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Outcomes</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Collaborations</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Syllabus</span>
+                </div>
+            </a>
+            <a href="settings.html">
+                <div class="nav-list">
+                    <span>Settings</span>
+                </div>
+            </a>
+        </div>
+    </body>
 </html>
