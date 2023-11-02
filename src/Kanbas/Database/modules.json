@@ -1,0 +1,74 @@
+[
+    {
+      "_id":"1",
+      "name": "Resources",
+      "description": "",
+      "course": "5610"
+    },
+    {
+      "_id":"2",
+      "name": "Week 0 - Intro",
+      "description": "",
+      "course": "5610"
+    },
+    {
+      "_id":"3",
+      "name": "Week 1 - HTML",
+      "description": "",
+      "course": "5610"
+    },
+    {
+      "_id":"4",
+      "name": "Required Textbooks",
+      "description": "",
+      "course": "5610"
+    },
+    {
+      "_id":"5",
+      "name": "Resources",
+      "description": "",
+      "course": "5010"
+    },
+    {
+      "_id":"6",
+      "name": "Week 0 - Intro",
+      "description": "",
+      "course": "5010"
+    },
+    {
+      "_id":"7",
+      "name": "Week 1 - Object Oriented Programming",
+      "description": "",
+      "course": "5010"
+    },
+    {
+      "_id":"8",
+      "name": "Required Textbooks",
+      "description": "",
+      "course": "5010"
+    },
+    {
+      "_id":"9",
+      "name": "Resources",
+      "description": "",
+      "course": "5650"
+    },
+    {
+      "_id":"10",
+      "name": "Week 0 - Intro",
+      "description": "",
+      "course": "5650"
+    },
+    {
+      "_id":"11",
+      "name": "Week 1 - Memory Management",
+      "description": "",
+      "course": "5650"
+    },
+    {
+      "_id":"12",
+      "name": "Required Textbooks",
+      "description": "",
+      "course": "5650"
+    }
+  ]

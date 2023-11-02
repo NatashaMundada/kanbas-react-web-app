@@ -1,5 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile</title>
+        <link href="../index.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div>
+                <img src="../images/northeastern-logo.jpeg" width="70" height="75">
+            </div>
+            <div class="link-bg-color-selected row">
+                <a href="index.html">
+                    <i class="fa fa-user" aria-hidden="true" style="color: black; margin-bottom: 5px;"></i>
+                    <span>Account</span>
+                </a>
+            </div>
+            <a href="../dashboard.html">
+                    <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Dashboard</span>
+            </a>
+            <a href="../course_content.html">
+                    <i class="fas fa-light fa-book fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Courses</span>
+            </a>
+            <a href="#">
+                    <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Calendar</span>
+            </a>
+
+            <a href="#">
+                    <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Inbox</span>
+            </a>
+    
+            <a href="#">
+                    <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>History</span>
+            </a>
+            <a href="#">
+                    <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Studio</span>
+            </a>
+
+            <a href="#">
+                    <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Commons</span>
+            </a>
+    
+            <a href="#">
+                    <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Help</span>
+            </a>
+        </div>
+        <div class="heading-profile">
+            <i class="fas fa-light fa-grip-lines fa-3x" style="color: rgb(216, 7, 7); padding: 10px;"></i>
+            <span style="padding: 10px; color: black; font-size: 30px; font-weight: 250;">Harry Potter's Profile</span>
+        </div>
+        <hr style="width:100%;text-align:left;margin-left:110px">
+        <div class="account-navigation">
+            <a href="#">
+                <div class="nav-list">
+                    <span>Notifications</span>
+                </div>
+            </a>
+            <div class="selected-profile" style="border-left: solid; border-color: black; border-width: medium; 
+            margin-left: 8px;">
+                <a href="../kanbas/profile/index.html">
+                    <div class="nav-list">
+                        <span>Profile</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Files</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Settings</span>
+                </div>
+                
+            </a>
+            
+            <a href="#">
+                <div class="nav-list">
+                    <span>ePortfolios</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Shared Content</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>The Hub</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Qwickly Course Tools</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Global Announcements</span>
+                </div>
+            </a>
+        </div>
+        <div class="main-profile">
+            <div class="float-end">
+                <form action="edit.html">
+                    <button type="submit" class="btn-secondary" 
+                    style="background-color: rgb(199, 194, 194); color: black; border-width: thin;">
+                        <i class="fa fa-pencil" aria-hidden="true" style="color: black;"></i>
+                        Edit Profile
+                    </button>               
+                </form>
+            </div>
+            <div class="profile">
+                <i class="fa fa-user fa-4x" aria-hidden="true" style="color: black;"></i>
+                <span style="font-size: 35px; font-weight: 250;">Harry Potter</span>
+                <br/>
+                <span style="font-size: 25px; font-weight: 250;">Contact</span>
+                <p>No registered services, you can add some <br/>on the <a href="#" style="color: red;">settings</a> page.</p>
+                <span style="font-size: 25px; font-weight: 250;">Biography</span>
+                <p>Muggle, Quidditch, Owl.</p>
+                <span style="font-size: 25px; font-weight: 250;">Links</span>
+                <a href="https://www.youtube.com/@WebDevTV">
+                    <i class="fas fa-light fa-link" style="color: black;"></i>
+                    <span style="color: red;">YouTube</span>
+                </a>                
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
     <style>
         input.right {
             float: right;
@@ -21,48 +170,12 @@
             </thead>
             <tbody>
                 <tr valign="top">
+                    
                     <td>
-                        <ul>
-                            <li><a href="../account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="../courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="#">Notifications</a></li>
-                            <li><a href="index.html">Profile</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">ePortfolios</a></li>
-                            <li><a href="#">Shared Content</a></li>
-                            <li><a href="#">The Hub</a></li>
-                            <li><a href="#">Qwickly Course Tools</a></li>
-                            <li><a href="#">Global Announcements</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p>Harry Potter's Profile</p>
-                        <hr>
-                        <form action="edit.html">
-                            <input type="submit" class="right" value="Edit Profile">
-                        </form>
-                        <h2>Harry Potter</h2>
-                        <h3>Contact</h3>
-                        <p>No registered services, you can add more on the <a href="#">settings</a> page.</p>
-                        <h3>Biography</h3>
-                        <p>Muggle, Quidditch, Owl.</p>
-                        <h3>Links</h3>
-                        <p><a href="#">YouTube</a></p>
+                        
                     </td>
                 </tr>
             </tbody>
         </table>
     </body>
-</html>
+</html> -->
