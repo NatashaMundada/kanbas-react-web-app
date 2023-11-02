@@ -1,13 +1,22 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
-
+import AssignmentEditor from "./AssignmentEditor";
+import { useDispatch, useSelector } from "react-redux";
+import { addAssignment, updateAssignment } from "./assignmentsReducer"; 
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignments;
+  const dispatch = useDispatch();
+  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+
   const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId);
+    (assignment) => assignment.course === courseId
+  );
+
+  console.log(courseAssignments, "course ass")
+
+ 
   return (
     <div>
       <div style={{marginTop:50}}>
@@ -15,10 +24,11 @@ function Assignments() {
             style={{marginRight: 20, backgroundColor: "lightgray", color: "black"}}>
                 <i className="fas fa-solid fa-ellipsis-vertical"></i>
             </button>
-            <button type="submit" class="btn btn-danger float-end" style={{marginRight: 5}}>
+            <Link type="submit" class="btn btn-danger float-end" style={{marginRight: 5}}
+            to={`/Kanbas/Courses/${courseId}/Assignments/Editor`}>
                 <i className="fa fa-plus" style={{color: "white"}}></i>
                     Assignment
-            </button>
+            </Link>
             <button type="submit" className="btn btn-secondary float-end" 
             style={{marginRight: 5, backgroundColor: "lightgray", color: "black"}}>
                 <i className="fa fa-plus" style={{color: "black", marginRight: 5}}></i>
@@ -31,7 +41,7 @@ function Assignments() {
             </div>
             <hr style={{width: 1100}}/>
       </div>
-      <div style={{marginTop: 50, width: 1100}}>
+      <div style={{marginTop: 50, width: 1000}}>
         <div className="list-group">
           <li className="list-group-item rounded-0" 
             style={{backgroundColor: "lightgray", color: "black"}}>
@@ -43,7 +53,7 @@ function Assignments() {
                 <p>40% of Total</p>
             </span>
           </li>
-          <div style={{borderLeft: "solid", borderColor: "green", borderWidth: 4, height: 195}}>
+          <div style={{borderLeft: "solid", borderColor: "green", borderWidth: 4}}>
           {courseAssignments.map((assignment) => (
             <Link
               key={assignment._id}
@@ -60,7 +70,7 @@ function Assignments() {
               </div>
               <b>{assignment.title}</b><br/>
               <small> <span style={{color: "red"}}>Multiple Modules </span>
-              <b>| Due</b> {assignment.date}</small>
+              <b>| Due</b> {assignment.due} | {assignment.points} pts</small>
             </Link>
           ))}
           </div>

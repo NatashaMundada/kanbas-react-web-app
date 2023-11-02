@@ -9,14 +9,13 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import Breadcrumb from "./breadcrumb";
-function Courses() {
+function Courses({courses}) {
   const { defaultcourseId } = useParams();
   console.log(useParams())
-  const course = db.courses.find((course) => course._id === defaultcourseId);
+  const course = courses.find((course) => course._id === defaultcourseId);
   return (
     <div>
-        <div>
-        
+        <div> 
         <Breadcrumb />
         <hr style={{width:1300, marginLeft:50}}/>
         <CourseNavigation />
