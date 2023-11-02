@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Resources",
+      "week0": "Week 0 - Intro",
+      "week1": "Week 1 - HTML",
+      "textboot": "Required Textbooks",
+      "course": "5610"
+    },
+    {
+      "name": "Resources",
+      "week0": "Week 0 - Intro",
+      "week1": "Week 1 - Memory Management",
+      "textboot": "Required Textbooks",
+      "course": "5650"
+    },
+    {
+      "name": "Resources",
+      "week0": "Week 0 - Intro",
+      "week1": "Week 1 - Object Oriented Programming",
+      "textboot": "Required Textbooks",
+      "course": "5010"
+    }
+  ]

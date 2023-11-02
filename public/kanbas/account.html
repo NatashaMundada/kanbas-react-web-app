@@ -1,41 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <table width="100%">
-        <thead>
-            <tr valign="top">
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr valign="top">
-                <td>
-                    <ul>
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="../kanbas/profile/index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <head>
+        <meta charset="UTF-8">
+        <title>Account Navigation</title>
+        <link href="index.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div>
+                <img src="images/northeastern-logo.jpeg" width="70" height="75">
+            </div>
+            <div class="link-bg-color-selected row">
+                <a href="../kanbas/profile/index.html">
+                    <span class="fas fa-light fa-user fa-1x" style="color: black; margin-bottom: 5px;"></span>
+                    <span>Account</span>
+                </a>
+            </div>
+            <a href="dashboard.html">
+                    <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Dashboard</span>
+            </a>
+            <a href="course_content.html">
+                    <i class="fas fa-light fa-book fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Courses</span>
+            </a>
+            <a href="#">
+                    <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Calendar</span>
+            </a>
+
+            <a href="#">
+                    <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Inbox</span>
+            </a>
+    
+            <a href="#">
+                    <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>History</span>
+            </a>
+            <a href="#">
+                    <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Studio</span>
+            </a>
+
+            <a href="#">
+                    <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Commons</span>
+            </a>
+    
+            <a href="#">
+                    <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Help</span>
+            </a>
+        </div>
+        <div class="heading-profile">
+            <i class="fas fa-light fa-grip-lines fa-3x" style="color: rgb(216, 7, 7); padding: 10px;"></i>
+            <span style="padding: 10px; color: black; font-size: 30px; font-weight: 250;">Harry Potter's Profile</span>
+        </div>
+        <hr style="width:100%;text-align:left;margin-left:110px">
+        <div class="account-navigation">
+            
+            <a href="#">
+                <div class="nav-list">
+                    <span>Notifications</span>
+                </div>
+            </a>
+            <a href="../kanbas/profile/index.html">
+                <div class="nav-list">
+                    <span>Profile</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Files</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Settings</span>
+                </div>
+                
+            </a>
+            
+            <a href="#">
+                <div class="nav-list">
+                    <span>ePortfolios</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Shared Content</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>The Hub</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Qwickly Course Tools</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Global Announcements</span>
+                </div>
+            </a>
+        </div>
+    </body>
 </html>

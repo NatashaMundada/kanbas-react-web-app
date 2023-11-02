@@ -4,95 +4,200 @@
         <title>
             Edit Profile
         </title>
+        <link href="../index.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
     </head>
-    <table width="100%">
-        <thead>
-            <tr valign="top">
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr valign="top">
-                <td>
-                    <ul>
-                        <li><a href="../account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="../courses.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <h2>Harry Potter</h2>
-                    <label for="text-fields-username">Name:*</label>
-                    <input id="text-fields-username" placeholder="harry" value="Harry Potter"/>
-                    <label for="select-one-pronoun">
-                        Pronouns:
-                    </label>
-                    <select id="select-one-pronoun">
-                        <option selected value="None">None</option>
-                    </select><br/><br/>
-                    <label for="text-fields-title">Title:</label>
-                    <input id="text-fields-title" placeholder="" value=""/>
-                    <h3>Contact</h3>
-                    <p>No registered services, you can add more on the <a href="#">settings</a> page.</p>
-                    <h3>Biography</h3>
-                    <p>Muggle, Quidditch, Owl.</p>
-                    <form id="textarea">
-                        <textarea rows="3">Muggle, Quidditch, Owl.</textarea>
-                    </form>
-                    <h3>Links</h3>
-                    <p>
-                        <ul>
-                            <li><a href="#">YouTube Links to an external site.</a></li>
-                        </ul> 
-                    </p>
-                    <table>
-                        <thead>
-                            <th>Title</th>
-                            <th></th>
-                            <th>URL</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input id="text-fields-title" value="YouTube"/>
-                                </td>
-                                <td>
-                                    <p>&rarr;</p>
-                                </td>
-                                <td>
-                                    <input id="text-fields-title" value="https://www.youtube.com/"/>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button type="submit">Add another link</button><br/>
-                    <button type="submit">Cancel</button>
-                    <button type="submit" onclick="window.location.href = 'index.html';">Save Profile</button><br/>
-                    <button type="submit">Edit Profile</button>
-                    <button type="submit" onclick="window.location.href = 'index.html';">Cancel Editing</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <body>
+        <div class="sidebar">
+            <div>
+                <img src="../images/northeastern-logo.jpeg" width="70" height="75">
+            </div>
+            <div class="link-bg-color-selected row">
+                <a href="../kanbas/profile/index.html">
+                    <span class="fas fa-light fa-user fa-1x" style="color: black; margin-bottom: 5px;"></span>
+                    <span>Account</span>
+                </a>
+            </div>
+            <a href="../dashboard.html">
+                    <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Dashboard</span>
+            </a>
+            <a href="../course_content.html">
+                    <i class="fas fa-light fa-book fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Courses</span>
+            </a>
+            <a href="#">
+                    <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Calendar</span>
+            </a>
+
+            <a href="#">
+                    <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Inbox</span>
+            </a>
+    
+            <a href="#">
+                    <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>History</span>
+            </a>
+            <a href="#">
+                    <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Studio</span>
+            </a>
+
+            <a href="#">
+                    <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Commons</span>
+            </a>
+    
+            <a href="#">
+                    <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Help</span>
+            </a>
+        </div>
+        <div class="heading-profile">
+            <i class="fas fa-light fa-grip-lines fa-3x" style="color: rgb(216, 7, 7); padding: 10px;"></i>
+            <span style="padding: 10px; color: black; font-size: 30px; font-weight: 250;">Harry Potter's Profile</span>
+        </div>
+        <hr style="width:100%;text-align:left;margin-left:110px">
+        <div class="account-navigation">
+            <a href="#">
+                <div class="nav-list">
+                    <span>Notifications</span>
+                </div>
+            </a>
+            <div class="selected-profile" style="border-left: solid; border-color: black; border-width: medium; ">
+                <a href="../kanbas/profile/index.html">
+                    <div class="nav-list">
+                        <span style="margin-right: 8px;">Profile</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Files</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Settings</span>
+                </div>
+                
+            </a>
+            
+            <a href="#">
+                <div class="nav-list">
+                    <span>ePortfolios</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Shared Content</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>The Hub</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Qwickly Course Tools</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Global Announcements</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="edit-sidebar">
+            <div>
+                <form action="index.html">  
+                    <button type="submit" class="btn btn-secondary float-end" 
+                        style="--bs-btn-bg: gray; --bs-btn-color: black;">
+                        <i class="fas fa-pencil" aria-hidden="true" style="color: black;"></i>
+                        Cancel Editing
+                    </button>  
+                </form>
+                <i class="fa fa-user fa-5x" aria-hidden="true" style="color: black;"></i>
+            </div>
+            <form>
+                <div class="col-xs-6">
+                    <label for="nameinput" style="font-weight: bold;">Name:*</label>
+                    <input type="text" class="form-control" id="nameinput" placeholder="Harry Potter" value="Harry Potter">
+                </div>
+                <label for="select-one-pronoun" style="font-weight: bold;">
+                    Pronouns:
+                </label>
+                <select class="form-select" style="width: 300px;">
+                    <option selected value="None">None</option>
+                </select>
+                <div class="col-auto">
+                    <label for="titleinput" style="font-weight: bold;">Title:</label>
+                    <input type="text" class="form-control" id="titleinput" placeholder="">
+                </div>
+            </form>
+            <br/>
+            <label style="font-size: 30px; font-weight: 50;">Contact</label>
+            <p>No registered services, you can add some<br/> on the <a href="#" style="color: red;">settings</a> page.</p>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label" style="font-size: 30px; font-weight: 50;">Biography</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Muggle, Quidditch, Owl.
+                </textarea>
+            </div>
+            
+            <label style="font-size: 30px; font-weight: 50;">Links</label>
+
+            <div class="container text-center">
+                <div class="row row-cols-3">
+                    <div class="col-3">
+                    Title
+                    </div>
+                    <div class="col">
+                    URL
+                    </div>
+                    <div class="col">
+                    <p></p>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="" value="YouTube">
+                    </div>
+                    <div class="col-1">
+                        <p>&rarr;</p>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="" value="https://www.youtube.com/">
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-regular fa-xmark" style="color: red;"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button 
+                type="submit" class="btn btn-secondary float-start mt-2" >
+                Add another link
+                </button>
+                <br/>
+                <hr style="margin-top: 30px;">
+                <button onclick="window.location.href = 'index.html';" 
+                type="submit" class="btn btn-danger float-end" style="margin: 5px;">
+                    Save Profile
+                </button>
+                <button onclick="window.location.href = 'index.html';" 
+                type="submit" class="btn btn-secondary float-end" style="margin: 5px;">
+                    Cancel
+                </button>  
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,11 @@
+[
+    { "_id": "1", "title": "A1 - ENV + HTML", "date":"Sep 18 at 11:59 PM | 100 pts", "course": "5610" },
+    { "_id": "2", "title": "A2 - CSS + BOOTSTRAP", "date":"Sep 28 at 11:59 PM | 100 pts", "course": "5610" },
+    { "_id": "3", "title": "A3 - JS + REACT", "date":"Oct 05 at 11:59 PM | 100 pts", "course": "5610" },
+    { "_id": "4", "title": "A1 - Introduction to OOP", "date":"Sep 18 at 11:59 PM | 100 pts", "course": "5010" },
+    { "_id": "5", "title": "A2 - Introduction to Classes", "date":"Sep 28 at 11:59 PM | 100 pts", "course": "5010" },
+    { "_id": "6", "title": "A3 - Introduction to Objects", "date":"Oct 05 at 11:59 PM | 100 pts", "course": "5010" },
+    { "_id": "7", "title": "A1 - Memory Management", "date":"Sep 18 at 11:59 PM | 100 pts", "course": "5650" },
+    { "_id": "8", "title": "A2 - Process Management", "date":"Sep 28 at 11:59 PM | 100 pts", "course": "5650" },
+    { "_id": "9", "title": "A3 - OS Modes", "date":"Oct 05 at 11:59 PM | 100 pts", "course": "5650" }
+  ]

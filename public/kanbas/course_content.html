@@ -2,134 +2,2368 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Courses</title>
-     </head>
-    <table width="100%">
-        <thead>
-            <tr valign="top">
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr valign="top">
-                <td>
-                    <ul>
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="course_content.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="../kanbas/assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                    </ul>
-                </td>
-                <td> 
-                    <button type="button">Collapse All</button>
-                    <button type="button">View Progress</button>
-                    <select id="publish">
-                        <option selected value="PUBLISHALL">Publish All</option>
-                    </select>
-                    <button type="button">Module</button>
-                    <ul>
-                        <li>Week 0 - INTRO</li>
-                        <ul>
-                            <li>LEARNING OBJECTIVES</li>
-                            <ul>
-                                <li>Introduction to the course</li>
-                                <li>Learn what is Web Development</li>
-                                <li>Creating a development environment</li>
-                                <li>Creating a Web Application</li>
-                                <li>Getting started with the 1st assignment</li>
-                            </ul>
-                        </ul>
-                        <ul>
-                            <li>READING</li>
-                            <ul>
-                                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                            </ul>
-                        </ul>
-                        <ul>
-                            <li>SLIDES</li>
-                            <ul>
-                                <li><a href="#">Introduction to Web Development</a></li>
-                                <li><a href="#">Creating an HTTP server with Node.js</a></li>
-                                <li><a href="#">Creating a React Application</a></li>
-                                <li><a href="#">Commit your source to GitHub.com</a></li>
-                                <li><a href="#">Deploying to Netlify</a></li>
-                                <li><a href="#">Deploying multiple branches in Netlify</a></li>
-                            </ul>
-                        </ul>
-                    </ul>
-                    <ul>
-                    <li>Week 1 - HTML</li>
-                        <ul>
-                            <li>LEARNING OBJECTIVES</li>
-                            <ul>
-                                <li>Learn how to create user interfaces with HTML</li>
-                                <li>Keep working on assignment 1</li>
-                                <li>Deploy the assignment to Netlify</li>
-                            </ul>
-                        </ul>
-                        <ul>
-                            <li>READING</li>
-                            <ul>
-                                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                            </ul>
-                        </ul>
-                    </ul>
-                </td>
-                <td>
-                    <h3>Course Status</h3>
-                    <button type="button">Unplubish</button>
-                    <button type="button">Published</button>
-                    <ul>
-                        <li><a href="#">Import Existing Content</a></li>
-                        <li><a href="#">Import From Commons</a></li>
-                        <li><a href="#">Choose Home Page</a></li>
-                        <li><a href="#">View Course Stream</a></li>
-                        <li><a href="#">New Announcement</a></li>
-                        <li><a href="#">New Analytics</a></li>
-                        <li><a href="#">View Course Notifications</a></li>
-                    </ul>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                    <h3>Coming Up</h3>
-                    <a href="#">View Calendar</a>
-                    <ul>
-                        <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at <br> 11:45am</a></li>
-                        <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at <br> 11:45am</a></li>
-                        <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="d-none d-xxl-block">
+            <div class="sidebar">
+                <div>
+                    <img src="images/northeastern-logo.jpeg" width="70" height="85">
+                </div>
+                <a href="../kanbas/profile/index.html">
+                    <div class="icon-list">
+                        <i class="fa fa-user fa-1x" aria-hidden="true" style="color:  #d8220e; margin-bottom: 5px;"></i>
+                        <span>Account</span>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <div class="link-bg-color-selected row">
+                    <a href="course_content.html">
+                        <span class="fas fa-light fa-book fa-1x" style="color: black; margin-bottom: 5px;"></span>
+                        <span>Courses</span>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Calendar</span>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Inbox</span>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>History</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Studio</span>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Commons</span>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Help</span>
+                    </div>
+                </a>
+            </div>
+            <button type="submit" class="btn float-end me-2 mb-2" style="margin-top: 10px; background-color: rgb(214, 210, 210);">
+                <i class="fa fa-glasses" aria-hidden="true" style="color: black;"></i>
+                Student View
+            </button>
+            
+            <div class="home-heading-big-screen">
+                <i class="fas fa-light fa-grip-lines fa-2x" style="color: #d8220e; padding: 10px;"></i>
+                <nav style="--bs-breadcrumb-divider: '>'; padding-top: 10px;" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: #d8220e; font-size: 20px;">CS5610.11550.202410</a></li>
+                    <li class="breadcrumb-item active" style = "color: black; font-size: 20px;" aria-current="page">Modules</li>                            
+                    </ol>
+                </nav>
+            </div>
+            <br/>
+            <hr style="width:100%;margin-left:110px; margin-top: 10px;">
+            <div class="home-navigation-big-screen">
+                <p style="font-style: italic;">202410_2_Fall_2023_Sem..</p> 
+                <div class="selected-profile" style="border-left: solid; border-color: black; border-width: medium;">
+                <a href="course_content.html">
+                    <div class="nav-list">
+                        <span>Home</span>
+                    </div>
+                </a>
+                </div>
+                <a href="#">
+                    <div class="nav-list">
+                        <span style="margin-right: 8px;">Modules</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Piazza</span>
+                    </div>
+                    
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Zoom Meetings</span>
+                    </div>
+                    
+                </a>
+                <a href="../kanbas/assignments/index.html">
+                    <div class="nav-list">
+                        <span>Assignments</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Quizzes</span>
+                    </div>
+                    
+                </a>
+                
+                    <a href="grades.html">
+                        <div class="nav-list">
+                            <span>Grades</span>
+                        </div>
+                    </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>People</span>
+                    </div>
+                    
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Panopto Video</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list col">
+                        <span>Discussions</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Announcements</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Pages</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Files</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Rubrics</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Outcomes</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Collaborations</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Syllabus</span>
+                    </div>
+                </a>
+                <a href="settings.html">
+                    <div class="nav-list">
+                        <span>Settings</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="course-content-list">
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <button type="submit" class="btn btn-danger float-end" style="margin-left: 5px; font-size:13px">
+                        Assignment
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle float-end"  
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px" 
+                data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                        Publish All <span class="caret"></span>
+                </button>
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    View Progress
+                </button>
+                <button type="submit" class="btn btn-secondary float-end mb-2" 
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    Collapse All
+                </button>
+                
+                <hr style="width:100%;text-align:left;margin-left:10px">
+                <div class="list-group">
+                    <li class="list-group-item list-group-item-secondary rounded-0">
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 0 - Intro</b>
+                        </li>
+                </div>
+                <div class="list-group" style="border-left: 4px solid green;">
+                    <li class="list-group-item rounded-0">
+                        <div class="col" >
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div><b>LEARNING OBJECTIVES</b></div>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Introduction to the course</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn what is Web Development</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a development environment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a Web Application</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Getting started with the 1st assignment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to Web Development</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating an HTTP server with Node.js</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Commit your source to GitHub.com</a>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Deploying to Netlify</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class=" hyperlink-list ms-3" href="#">Deploying multiple branches in Netlify</a>
+                    </li> 
+                </div>
+                <br>
+                <div class="list-group">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 1 - HTML</b>
+                    </li>
+                </div>
+                <div class="list-group" style="border-left: 4px solid green;">
+
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn how to create user interfaces with HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Keep working on assignment 1</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Deploy the assignment to Netlify</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to HTML and the DOM</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating Web Forms</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Navigating with Anchors</a>
+                    </li> 
+                </div>
+            </div>
+            <div style="margin-left:1150px;">
+                <p >Course Content</p>
+                <button type="submit" class="btn btn-secondary mb-2" 
+                    style="background-color: rgb(224, 220, 220); color: black;">
+                    <i class="fas fa-light fa-ban"></i>
+                        Unpublish
+                </button>
+                <button type="submit" class="btn btn-success mb-2">
+                    <i class="fas fa-light fa-circle-check"></i>
+                    Published
+                </button>
+                <button type="submit" class="btn btn-secondary mb-1" 
+                    style="background-color: rgb(224, 220, 220); color: black; width: 88%; text-align: start;">
+                    <i class="fas fa-light fa-file-import"></i>
+                        Import Existing Content
+                </button>
+                <button type="submit" class="btn btn-secondary mb-1" 
+                    style="background-color: rgb(224, 220, 220); color: black; width: 88%; text-align: start;">
+                    <i class="fas fa-light fa-upload fa-rotate-90 ms-1"></i>
+                        Import from Commons
+                </button>
+                <button type="submit" class="btn btn-secondary mb-1" 
+                    style="background-color: rgb(224, 220, 220); color: black; width: 88%; text-align: start;">
+                    <i class="fas fa-regular fa-circle"></i>
+                        Choose Home Page
+                </button>
+                <button type="submit" class="btn btn-secondary mb-1" 
+                    style="background-color: rgb(224, 220, 220); color: black; width: 88%; text-align: start;">
+                    <i class="fas fa-solid fa-signal"></i>
+                        View Course Stream
+                </button>
+                <button type="submit" class="btn btn-secondary mb-1" 
+                    style="background-color: rgb(224, 220, 220); color: black; width: 88%; text-align: start;">
+                    <i class="fas fa-regular fa-bullhorn"></i>
+                        New Announcement
+                </button>
+                <button type="submit" class="btn btn-secondary mb-1" 
+                    style="background-color: rgb(224, 220, 220); color: black; width: 88%; text-align: start;">
+                    <i class="fas fa-solid fa-signal"></i>
+                        New Analytics
+                </button>
+                <button type="submit" class="btn btn-secondary mb-1" 
+                    style="background-color: rgb(224, 220, 220); color: black; width: 88%; text-align: start;">
+                    <i class="fas fa-regular fa-bell"></i>
+                        View course Notifications
+                </button>
+                <br/>
+                <b>To Do</b>
+                <hr>
+                <span style="color: red; text-decoration: none;">
+                    Grade A1 - ENV + HTML
+                </span><br/>
+                <small>100 points * Sep 18 at 11:50 pm</small>
+                <br/>
+                <br/>
+                <b>Coming Up</b>
+                
+                <span style="margin-left: 35px;"><i class="fa-regular fa-calendar"></i>View Calendar</span>
+                <hr>
+                <i class="fa-regular fa-calendar"></i>
+                <span style="color: red; text-decoration: none;">
+                    Lecture
+                </span><br/>
+                <small>CS5610.12456.120404</small>
+                <br/>
+                <small>Sep 11 at 11:45am</small>
+                <br/>
+                <br/>
+                <i class="fa-regular fa-calendar"></i>
+                <span style="color: red; text-decoration: none;">
+                    CS5610 SP23 Lecture
+                </span><br/>
+                <small>CS5610.12456.120404</small>
+                <br/>
+                <small>Sep 11 at 11:45am</small>
+                <br/>
+                <br/>
+                <i class="fa-regular fa-calendar"></i>
+                <span style="color: red; text-decoration: none;">
+                    CS5610 Web Development <br/>Summer 1
+                </span><br/>
+                <small>CS5610.12456.120404</small>
+                <br/>
+                <small>Sep 11 at 11:45am</small>
+            </div>
+        </div>
+        <div class="d-none d-xl-block d-xxl-none d-lg-block">
+            <div class="sidebar">
+                <div>
+                    <img src="images/northeastern-logo.jpeg" width="70" height="85">
+                </div>
+                <a href="../kanbas/profile/index.html">
+                    <div class="icon-list">
+                        <i class="fa fa-user fa-1x" aria-hidden="true" style="color:  #d8220e; margin-bottom: 5px;"></i>
+                        <span>Account</span>
+                    </div>
+                </a>
+                <a href="dashboard.html">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <div class="link-bg-color-selected row">
+                    <a href="courses.html">
+                        <span class="fas fa-light fa-book fa-1x" style="color: black; margin-bottom: 5px;"></span>
+                        <span>Courses</span>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Calendar</span>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Inbox</span>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>History</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Studio</span>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Commons</span>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="icon-list">
+                        <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                        <span>Help</span>
+                    </div>
+                </a>
+            </div>
+            <button type="submit" class="btn float-end me-2 mb-2" style="margin-top: 10px; background-color: rgb(214, 210, 210);">
+                <i class="fa fa-glasses" aria-hidden="true" style="color: black;"></i>
+                Student View
+            </button>
+            
+            <div class="home-heading-big-screen">
+                <i class="fas fa-light fa-grip-lines fa-2x" style="color: #d8220e; padding: 10px;"></i>
+                <nav style="--bs-breadcrumb-divider: '>'; padding-top: 10px;" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: #d8220e; font-size: 20px;">CS5610.11550.202410</a></li>
+                    <li class="breadcrumb-item active" style = "color: black; font-size: 20px;" aria-current="page">Modules</li>                            
+                    </ol>
+                </nav>
+            </div>
+            <br/>
+            <hr style="width:100%;margin-left:110px; margin-top: 10px;">
+            <div class="home-navigation-big-screen">
+                <p style="font-style: italic;">202410_2_Fall_2023_Sem..</p> 
+                <div class="selected-profile" style="border-left: solid; border-color: black; border-width: medium;">
+                <a href="course_content.html">
+                    <div class="nav-list">
+                        <span>Home</span>
+                    </div>
+                </a>
+                </div>
+                <a href="#">
+                    <div class="nav-list">
+                        <span style="margin-right: 8px;">Modules</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Piazza</span>
+                    </div>
+                    
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Zoom Meetings</span>
+                    </div>
+                    
+                </a>
+                <a href="../kanbas/assignments/index.html">
+                    <div class="nav-list">
+                        <span>Assignments</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Quizzes</span>
+                    </div>
+                    
+                </a>
+                
+                    <a href="grades.html">
+                        <div class="nav-list">
+                            <span>Grades</span>
+                        </div>
+                    </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>People</span>
+                    </div>
+                    
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Panopto Video</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list col">
+                        <span>Discussions</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Announcements</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Pages</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Files</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Rubrics</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Outcomes</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Collaborations</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav-list">
+                        <span>Syllabus</span>
+                    </div>
+                </a>
+                <a href="settings.html">
+                    <div class="nav-list">
+                        <span>Settings</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="course-content-list">
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <button type="submit" class="btn btn-danger float-end" style="margin-left: 5px; font-size:13px">
+                        Assignment
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle float-end"  
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px" 
+                data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                        Publish All <span class="caret"></span>
+                </button>
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    View Progress
+                </button>
+                <button type="submit" class="btn btn-secondary float-end mb-2" 
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    Collapse All
+                </button>
+                
+                <hr style="width:100%;text-align:left;margin-left:10px">
+                <div class="list-group" style="width: 700px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 0 - Intro</b>
+                    </li>
+                </div>
+                <div class="list-group" style="width: 700px; border-left: 4px solid green;">
+                    
+                    
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Introduction to the course</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn what is Web Development</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a development environment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a Web Application</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Getting started with the 1st assignment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to Web Development</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating an HTTP server with Node.js</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Commit your source to GitHub.com</a>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Deploying to Netlify</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class=" hyperlink-list ms-3" href="#">Deploying multiple branches in Netlify</a>
+                    </li> 
+                </div>
+                <br>
+                <div class="list-group" style="width: 700px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 1 - HTML</b>
+                    </li>
+                </div>
+                <div class="list-group" style="width: 700px; border-left: 4px solid green;"> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn how to create user interfaces with HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Keep working on assignment 1</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Deploy the assignment to Netlify</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to HTML and the DOM</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating Web Forms</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Navigating with Anchors</a>
+                    </li> 
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-md-block d-xl-none d-xxl-none d-lg-none">
+            <div class="horizontal-bar">
+                <button type="submit" onclick="window.location.href = 'small-kanbas-navigation.html';"
+                 class="fas fa-solid fa-bars ms-3"
+                style="text-decoration:none;color: #ffffff; width: 1%; background-color: transparent; border: none;">
+                </button>
+                <span style="color: #ffffff; margin-left: 180px;">CS5610.12456.120404 Modules</span>
+                <i class="fa fa-glasses float-end me-2" style="color: #ffffff;"></i>
+                <button type="button" onclick="window.location.href = 'small-course-navigation.html';"
+                 class="fas fa-solid fa-angle-down float-end"
+                style="text-decoration:none;color: #ffffff; border: none; background-color: transparent;">
+                </button>
+            </div>
+
+            <div style="margin-left: 90px; padding-top: 70px;">
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-right: 200px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <button type="submit" class="btn btn-danger float-end" style="margin-left: 5px; font-size:13px">
+                        Assignment
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle float-end"  
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px" 
+                data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                        Publish All <span class="caret"></span>
+                </button>
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-left:5px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    View Progress
+                </button>
+                <button type="submit" class="btn btn-secondary float-end mb-2" 
+                style="margin-left: 10px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    Collapse All
+                </button>
+                <hr style="width:80%;text-align:left;margin-left:5px">
+                <div class="list-group" style="width: 700px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 0 - Intro</b>
+                    </li>
+                </div>
+                <div class="list-group" style="width: 700px; border-left: 4px solid green;">
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Introduction to the course</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn what is Web Development</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a development environment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a Web Application</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Getting started with the 1st assignment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to Web Development</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating an HTTP server with Node.js</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Commit your source to GitHub.com</a>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Deploying to Netlify</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class=" hyperlink-list ms-3" href="#">Deploying multiple branches in Netlify</a>
+                    </li> 
+                </div>
+                <br>
+                <div class="list-group" style="width: 700px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 1 - HTML</b>
+                    </li>
+                </div>
+                <div class="list-group mb-2" style="width: 700px; border-left: 4px solid green;">
+                    
+                        
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn how to create user interfaces with HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Keep working on assignment 1</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Deploy the assignment to Netlify</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to HTML and the DOM</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating Web Forms</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Navigating with Anchors</a>
+                    </li> 
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-sm-block d-xl-none d-xxl-none d-md-none d-lg-none">
+            <div class="horizontal-bar-small">
+                <button type="submit" onclick="window.location.href = 'small-kanbas-navigation.html';"
+                 class="fas fa-solid fa-bars ms-3"
+                style="text-decoration:none;color: #ffffff; width: 1%; background-color: transparent; border: none;">
+                </button>
+                <span style="color: #ffffff; margin-left: 130px;">CS5610.12456.120404 Modules</span>
+                <i class="fa fa-glasses float-end me-2" style="color: #ffffff;"></i>
+                <button type="button" onclick="window.location.href = 'small-course-navigation.html';"
+                 class="fas fa-solid fa-angle-down float-end"
+                style="text-decoration:none;color: #ffffff; border: none; background-color: transparent;">
+                </button>
+            </div>
+
+            <div style="margin-left: 75px; padding-top: 70px;">
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-right: 10px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <button type="submit" class="btn btn-danger float-end" style="margin-left: 5px; font-size:13px">
+                        Assignment
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle float-end"  
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px" 
+                data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                        Publish All <span class="caret"></span>
+                </button>
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-left:1px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    View Progress
+                </button>
+                <button type="submit" class="btn btn-secondary float-end mb-2" 
+                style="background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    Collapse All
+                </button>
+                <hr style="width:85%;text-align:left;margin-left:5px">
+                <div class="list-group" style="width: 550px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 0 - Intro</b>
+                    </li>
+                </div>
+                <div class="list-group" style="width: 550px; border-left: 4px solid green;">
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Introduction to the course</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn what is Web Development</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a development environment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a Web Application</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Getting started with the 1st assignment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to Web Development</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating an HTTP server with Node.js</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Commit your source to GitHub.com</a>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Deploying to Netlify</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class=" hyperlink-list ms-3" href="#">Deploying multiple branches in Netlify</a>
+                    </li> 
+                </div>
+                <br>
+                <div class="list-group" style="width: 550px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 1 - HTML</b>
+                    </li>
+                </div>
+                <div class="list-group mb-2" style="width: 550px; border-left: 4px solid green;">
+                    
+                        
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn how to create user interfaces with HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Keep working on assignment 1</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Deploy the assignment to Netlify</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to HTML and the DOM</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating Web Forms</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Navigating with Anchors</a>
+                    </li> 
+                </div>
+            </div>  
+        </div>
+        <div class="d-block d-none d-sm-none d-xl-none d-xxl-none d-md-none d-lg-none">
+            <div class="horizontal-bar-small">
+                <button type="submit" onclick="window.location.href = 'small-kanbas-navigation.html';"
+                 class="fas fa-solid fa-bars ms-3"
+                style="text-decoration:none;color: #ffffff; width: 1%; background-color: transparent; border: none;">
+                </button>
+                <span style="color: #ffffff; margin-left: 130px;">CS5610.12456.120404 Modules</span>
+                <i class="fa fa-glasses float-end me-2" style="color: #ffffff;"></i>
+                <button type="button" onclick="window.location.href = 'small-course-navigation.html';"
+                 class="fas fa-solid fa-angle-down float-end"
+                style="text-decoration:none;color: #ffffff; border: none; background-color: transparent;">
+                </button>
+            </div>
+
+            <div style="margin-left: 75px; padding-top: 70px;">
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-right: 10px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <button type="submit" class="btn btn-danger float-end" style="margin-left: 5px; font-size:13px">
+                        Assignment
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle float-end"  
+                style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black; font-size:13px" 
+                data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                        Publish All <span class="caret"></span>
+                </button>
+                <button type="submit" class="btn btn-secondary float-end" 
+                style="margin-left:1px; background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    View Progress
+                </button>
+                <button type="submit" class="btn btn-secondary float-end mb-2" 
+                style="background-color: rgb(224, 220, 220); color: black; font-size:13px">
+                    Collapse All
+                </button>
+                <hr style="width:85%;text-align:left;margin-left:5px">
+                <div class="list-group" style="width: 550px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 0 - Intro</b>
+                    </li>
+                </div>
+                <div class="list-group" style="width: 550px; border-left: 4px solid green;">
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Introduction to the course</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn what is Web Development</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a development environment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Creating a Web Application</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Getting started with the 1st assignment</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to Web Development</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating an HTTP server with Node.js</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating a React Application</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Commit your source to GitHub.com</a>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Deploying to Netlify</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class=" hyperlink-list ms-3" href="#">Deploying multiple branches in Netlify</a>
+                    </li> 
+                </div>
+                <br>
+                <div class="list-group" style="width: 550px;">
+                    <li class="list-group-item list-group-item-secondary rounded-0" >
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                        <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        <i class="fas fa-solid fa-ellipsis-vertical float-end mt-2"></i>
+                        <i class="fa fa-plus float-end ms-1 mt-2" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-solid fa-circle-check float-end mt-2" style="color: green;"></i>
+                        <b>Week 1 - HTML</b>
+                    </li>
+                </div>
+                <div class="list-group mb-2" style="width: 550px; border-left: 4px solid green;">
+                    
+                        
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>LEARNING OBJECTIVES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Learn how to create user interfaces with HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Keep working on assignment 1</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Deploy the assignment to Netlify</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>READING</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 1 - Introduction</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-4"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b class="ms-4">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</b>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <b>SLIDES</b>
+                    </li>
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Introduction to HTML and the DOM</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Creating Web Forms</a>
+                    </li> 
+                    <li class="list-group-item rounded-0">
+                        <div class="col">
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start "></i>
+                            <i class="fas fa-regular fa-ellipsis-vertical float-start me-2"></i>
+                            <i class="fas fa-light fa-link float-start" style="color: green;"></i>
+                        </div>
+                        <div class="float-end">
+                            <i class="fas fa-solid fa-circle-check me-2" style="color: green;"></i>
+                            <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <a class="ms-3 hyperlink-list" href="#">Navigating with Anchors</a>
+                    </li> 
+                </div>
+            </div>  
+        </div>
+    </body>
 </html>
