@@ -1,16 +1,26 @@
-import React , { useState } from "react";
+import React , { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import './index.css';
 import { useSelector, useDispatch } from "react-redux";
+import * as client from "./client";
 import {
     addModule,
     deleteModule,
     updateModule,
     setModule,
+    setModules,
   } from "./modulesReducer";
+  import { findModulesForCourse, createModule } from "./client";
 function ModuleList({ isSmall }) {
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
@@ -19,6 +29,26 @@ function ModuleList({ isSmall }) {
 
   const moduleSizeClass = isSmall ? "smallmodule" : "largemodule";
   console.log(moduleSizeClass)
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
+
   return (
     <div>
         <div className={moduleSizeClass}
@@ -59,8 +89,8 @@ function ModuleList({ isSmall }) {
                     onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))
                 }
                     /><br/>
-                    <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
-                    <button className="btn btn-primary ms-2" onClick={() => dispatch(updateModule(module))}>Update</button>
+                    <button className="btn btn-success" onClick={handleAddModule}>Add</button>
+                    <button className="btn btn-primary ms-2" onClick={() => handleUpdateModule(module)}>Update</button>
 
                 </li>
 
@@ -77,7 +107,7 @@ function ModuleList({ isSmall }) {
                                         <i className="fas fa-solid fa-ellipsis-vertical float-end mt-3"></i>
                                         <i className="fa fa-plus float-end ms-1 mt-3" style={{color: "black", marginRight: 5}}></i>
                                         <i className="fas fa-solid fa-circle-check float-end mt-3" style={{color: "green"}}></i>
-                                        <button className="float-end me-2 mt-2 btn btn-danger" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                                        <button className="float-end me-2 mt-2 btn btn-danger" onClick={() => handleDeleteModule(module._id)}>Delete</button>
                                         <button className="float-end btn btn-success mt-2 me-2" onClick={() => dispatch(setModule(module))}>Edit</button>
                                         <p className="mt-3">{module.name}</p>
                                         <p>{module.description}</p>

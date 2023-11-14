@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import AssignmentEditor from "./AssignmentEditor";
 import { useDispatch, useSelector } from "react-redux";
-import { addAssignment, updateAssignment } from "./assignmentsReducer"; 
-
+import { addAssignment, updateAssignment, setAssignments, deleteAssignment } from "./assignmentsReducer"; 
+import { findAssignmentsForCourse, createAssignments, deleteAssignments } from "./client";
+import * as client from "./client";
 function Assignments() {
   const { courseId } = useParams();
   const dispatch = useDispatch();
@@ -14,7 +15,26 @@ function Assignments() {
     (assignment) => assignment.course === courseId
   );
 
-  console.log(courseAssignments, "course ass")
+  const handleDeleteAssignments = (assignmentId) => {
+    console.log("in handle delete")
+    console.log(assignmentId, "ass id")
+    deleteAssignments(assignmentId).then((status) => {
+      dispatch(deleteAssignment(assignmentId));
+    });
+  };
+
+  const handleAddAssignments = () => {
+    createAssignments(courseId, assignments).then((assignment) => {
+      dispatch(addAssignment(assignment));
+    });
+  };
+
+  useEffect(() => {
+    findAssignmentsForCourse(courseId)
+      .then((assignments) =>
+        dispatch(setAssignments(assignments))
+    );
+  }, [courseId]);
 
  
   return (
@@ -65,6 +85,8 @@ function Assignments() {
                 <i className="fas fa-regular fa-file-pen float-start mt-4 me-4 mb-4" style={{color: "green"}}></i>
               </div>
               <div className="float-end">
+              <button className="me-2 mt-2 btn btn-danger mb-2" onClick={() => handleDeleteAssignments(assignment._id)}>Delete</button>
+
                 <i className="fas fa-solid fa-circle-check mt-4 me-4" style={{color: "green"}}></i>
                 <i className="fas fa-solid fa-ellipsis-vertical mt-4"></i>
               </div>

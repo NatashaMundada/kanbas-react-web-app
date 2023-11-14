@@ -1,9 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import db from "../../Database";
 
 
 const initialState = {
-  assignments: db.assignments,
+  assignments: [],
   assignment: { title: "", points:"", due:"", availableFrom:"", until:"" },
 };
 
@@ -11,6 +10,10 @@ const assignmentsSlice = createSlice({
     name: "assignments",
     initialState,
     reducers: {
+      setAssignments: (state, action) => {
+        state.assignments = action.payload;
+      },
+  
       addAssignment: (state, action) => {
         console.log("in add assignment")
         state.assignments = [
@@ -20,6 +23,7 @@ const assignmentsSlice = createSlice({
         console.log(":ass" , ...state.assignments)
       },
       deleteAssignment: (state, action) => {
+        console.log("in delete assignments")
         state.assignments = state.assignments.filter(
           (assignment) => assignment._id !== action.payload
         );
@@ -41,5 +45,5 @@ const assignmentsSlice = createSlice({
 
 
 export const { addAssignment, deleteAssignment,
-    updateAssignment, setAssignment } = assignmentsSlice.actions;
+    updateAssignment, setAssignment, setAssignments } = assignmentsSlice.actions;
     export default assignmentsSlice.reducer;

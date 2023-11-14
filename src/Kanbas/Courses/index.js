@@ -1,4 +1,5 @@
 import db from "../../Kanbas/Database";
+import axios from "axios";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -9,10 +10,23 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import Breadcrumb from "./breadcrumb";
+import { useState, useEffect } from "react";
 function Courses({courses}) {
-  const { defaultcourseId } = useParams();
-  console.log(useParams())
-  const course = courses.find((course) => course._id === defaultcourseId);
+  const URL = "https://kanbas-node-server-app-1.onrender.com/api/courses"
+  const { courseId } = useParams();
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
   return (
     <div>
         <div> 
