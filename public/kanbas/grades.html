@@ -2,114 +2,301 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Grades</title>
-     </head>
-    <table width="100%">
-        <thead>
-            <tr valign="top">
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr valign="top">
-                <td>
-                    <ul>
-                        <li><a href="account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="course_content.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="../kanbas/assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <select id="gradebook">
-                        <option selected value="Gradebook">Gradebook</option>
-                    </select>
-                    <button type="button">Import</button>
-                    <select id="export">
-                        <option selected value="Export">Export</option>
-                    </select>
-                    <button type="button">Configure</button>
-                    <h3>Student Names</h3>
-                    <input type="name"
-                            placeholder="Search Students"/><br/>
-                    <h3>Assignment Names</h3>
-                    <input type="assignment"
-                            placeholder="Search Assignments"/><br/><br/>
-                    <button type="button">Apply Filters</button>
+        <title>Assignments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
-                    <br/><br/>
-                    <table border="1" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Student Name</th>
-                                <th>A1 Setup<br/>Out of 100</th>
-                                <th>A2 HTML<br/>Out of 100</th>
-                                <th>A3 CSS<br/>Out of 100</th>
-                                <th>A4 BOOTSTRAP<br/>Out of 100</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Harry Potter</td>
-                                <td><input type="number" name ="marks" placeholder=100 value="100"/></td>
-                                <td>100</td>
-                                <td>99</td>
-                                <td>95</td>
-                            </tr>
-                            <tr>
-                                <td>Hermione Granger</td>
-                                <td>100</td>
-                                <td>100</td>
-                                <td>100</td>
-                                <td>100</td>
-                            </tr>
-                            <tr>
-                                <td>Ron Weasley</td>
-                                <td>100</td>
-                                <td>95</td>
-                                <td><input type="number" name ="marks" placeholder=97 value="97"/></td>
-                                <td>100</td>
-                            </tr>
-                            <tr>
-                                <td>Luna Lovegood</td>
-                                <td>100</td>
-                                <td>97</td>
-                                <td>95</td>
-                                <td><input type="number" name ="marks" placeholder=99 value="99"/></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class="sidebar">
+            <div>
+                <img src="images/northeastern-logo.jpeg" width="70" height="90">
+            </div>
+            <a href="../kanbas/profile/index.html">
+                <div class="icon-list">
+                    <i class="fa fa-user fa-1x" aria-hidden="true" style="color:  #d8220e; margin-bottom: 5px;"></i>
+                    <span>Account</span>
+                </div>
+            </a>
+            <a href="dashboard.html">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <div class="link-bg-color-selected row">
+                <a href="course_content.html">
+                    <span class="fas fa-light fa-book fa-1x" style="color: black; margin-bottom: 5px;"></span>
+                    <span>Courses</span>
+                </a>
+            </div>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Calendar</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Help</span>
+                </div>
+            </a>
+        </div>
+        <div>
+        <div class="assignment-heading">
+            <i class="fas fa-light fa-grip-lines fa-2x" style="color: #d8220e; padding: 10px;"></i>
+            <nav style="--bs-breadcrumb-divider: '>'; padding-top: 10px;" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: #d8220e; font-size: 20px;">CS5610.11550.202410</a></li>
+                <li class="breadcrumb-item active" style = "color: black; font-size: 20px;" aria-current="page">Grades</li>                            
+                </ol>
+            </nav>
+        </div>            
+        <hr style="width:100%;text-align:left;margin-left:110px">
+        
+        <div class="assignment-navigation">   
+            <p style="font-style: italic;">202410_2_Fall_2023_Sem..</p> 
+            <a href="course_content.html">
+                <div class="nav-list">
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span style="margin-right: 8px;">Modules</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Piazza</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Zoom Meetings</span>
+                </div>
+                
+            </a>
+            <a href="../kanbas/assignments/index.html">
+                <div class="nav-list">
+                    <span>Assignments</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Quizzes</span>
+                </div>
+                
+            </a>
+            <div class="selected-profile" style="border-left: solid; border-color: black; border-width: medium;">
+                <a href="grades.html">
+                    <div class="nav-list">
+                        <span>Grades</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#">
+                <div class="nav-list">
+                    <span>People</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Panopto Video</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list col">
+                    <span>Discussions</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Announcements</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Pages</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Files</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Rubrics</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Outcomes</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Collaborations</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Syllabus</span>
+                </div>
+            </a>
+            <a href="settings.html">
+                <div class="nav-list">
+                    <span>Settings</span>
+                </div>
+            </a>
+        </div>
+        <div style="margin-left: 400px;">
+            <div class="ms-5">
+                <button type="submit" class="btn float-end" 
+            style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black;">
+            <i class="fas fa-solid fa-gear"></i>
+   
+            </button>
+            <div class="btn-group float-end">
+                <button type="button" class="btn btn-default dropdown-toggle" style=" 
+                background-color: rgb(224, 220, 220);" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    <i class="fa-solid fa-file-export"></i>
+                    Export <span class="caret"></span>
+                </button>
+            </div>
+            
+            <button type="submit" class="btn btn float-end me-2" 
+            style="margin-left: 5px; background-color: rgb(224, 220, 220); color: black;">
+            <i class="fas fa-thin fa-file-import"></i>
+                Import
+            </button>
+            </div>
+        </div>
+        <br/>
+        <div style="margin-left: 400px;">
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <b>Student Names</b>
+                            <div class="dropdown">
+                                <div id="myDropdown" class="dropdown-content">
+                                    <input type="text" placeholder="Search Students" id="myInput">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <b>Assignment Names</b>
+                            <div class="dropdown">
+                                <div id="myDropdown" class="dropdown-content">
+                                    <input type="text" placeholder="Search Assignments" id="myInput">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" class="btn mt-3" 
+            style="margin-left: 5px; background-color: rgb(224, 220, 220);">
+            <i class="fas fa-thin fa-filter"></i>
+                Apply Filters
+            </button>
+            <table class="table table-bordered table-striped table-responsive mt-3">
+                <tbody>
+                    <tr>
+                        <td><strong>Student Name</strong></td>
+                        <td style="text-align: center;">
+                            A1 SETUP <br/><small>Out of 100</small>
+                        </td>
+                        <td style="text-align: center;">
+                            A2 HTML <br/><small>Out of 100</small>
+                        </td>
+                        <td style="text-align: center;">
+                            A3 CSS <br/><small>Out of 100</small>
+                        </td>
+                        <td style="text-align: center;">
+                            A4 BOOTSTRAP <br/><small>Out of 100</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #d8220e">Harry Potter</td>
+                        <td style="text-align: center;">
+                            <input type="text" name ="marks" value="100%" style="text-align: center;"/></td>
+                        <td style="text-align: center;">100%</td>
+                        <td style="text-align: center;">99%</td>
+                        <td style="text-align: center;">95%</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #d8220e">Hermione Granger</td>
+                        <td style="text-align: center;">100%</td>
+                        <td style="text-align: center;">100%</td>
+                        <td style="text-align: center;">100%</td>
+                        <td style="text-align: center;">100%</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #d8220e">Ron Weasley</td>
+                        <td style="text-align: center;">100%</td>
+                        <td style="text-align: center;">95%</td>
+                        <td style="text-align: center;"><input type="text" name ="marks" value="97%" style="text-align: center;"/></td>
+                        <td style="text-align: center;">100%</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #d8220e">Luna Lovegood</td>
+                        <td style="text-align: center;">100%</td>
+                        <td style="text-align: center;">97%</td>
+                        <td style="text-align: center;">95%</td>
+                        <td style="text-align: center;">99%</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+            
+        </div>
+    </body>
 </html>
