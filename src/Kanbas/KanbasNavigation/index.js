@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import { NavLink, useLocation } from "react-router-dom";
 function KanbasNavigation() {
-  const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
+  const links = ["Account", "Dashboard", "Signin", "Signup", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
   const fonts = ["fa fa-user", "fa fa-gauge", "fa fa-book", "fa fa-calendar", "fa fa-inbox", 
                 "fa fa-clock", "fa fa-tv", "fa fa-circle-arrow-right", "fa fa-question"]
   const { pathname } = useLocation();
