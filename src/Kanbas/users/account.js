@@ -57,11 +57,11 @@ function Account() {
             <option value="ADMIN">Admin</option>
             <option value="FACULTY">Faculty</option>
             <option value="STUDENT">Student</option>
-          </select>
-          <button onClick={save} className="btn btn-success">
+          </select><br/>
+          <button onClick={save} className="btn btn-success w-100">
             Save
         </button> <br/>
-        <button onClick={signout} className="btn btn-primary">
+        <button onClick={signout} className="btn btn-primary w-100">
     Signout
   </button>
         <Link to="/kanbas/admin/users" className="btn btn-warning w-100">
