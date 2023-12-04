@@ -36,21 +36,26 @@ function Account() {
       <h1>Account</h1>
       {account && (
         <div>
+          <label>Password</label>
           <input value={account.password}
             onChange={(e) => setAccount({ ...account,
-              password: e.target.value })}/>
+              password: e.target.value })}/><br/>
+          <label>First Name</label>
           <input value={account.firstName}
             onChange={(e) => setAccount({ ...account,
-              firstName: e.target.value })}/>
+              firstName: e.target.value })}/><br/>
+          <label>Last Name</label>
           <input value={account.lastName}
             onChange={(e) => setAccount({ ...account,
-              lastName: e.target.value })}/>
-          <input value={account.dob}
+              lastName: e.target.value })}/><br/>
+          <label>Date of birth</label>
+          <input value={account.dob} type="Date"
             onChange={(e) => setAccount({ ...account,
-              dob: e.target.value })}/>
+              dob: e.target.value })}/><br/>
+          <label>Email</label>
           <input value={account.email}
             onChange={(e) => setAccount({ ...account,
-              email: e.target.value })}/>
+              email: e.target.value })}/><br/>
           <select onChange={(e) => setAccount({ ...account,
               role: e.target.value })}>
             <option value="USER">User</option>

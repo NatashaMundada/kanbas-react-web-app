@@ -8,6 +8,7 @@ function Signup() {
   const navigate = useNavigate();
   const signup = async () => {
     try {
+      console.log("sign up ");
       await client.signup(credentials);
       navigate("/kanbas/account");
     } catch (err) {
