@@ -66,7 +66,7 @@ function UserTable() {
               <input value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
             </td>
             <td>
-              <input value={user.firstName} onChange={(e) => setUser({ ...user, firstName: e.target.value })}/>
+              <input value={user.firstName } onChange={(e) => setUser({ ...user, firstName: e.target.value })}/>
             </td>
             <td>
               <input value={user.lastName} onChange={(e) => setUser({ ...user, lastName: e.target.value })}/>
