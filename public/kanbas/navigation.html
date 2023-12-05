@@ -1,123 +1,340 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>
-            Navigation
-        </title>
+        <meta charset="UTF-8">
+        <title>Navigation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet"/>
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
     </head>
     <body>
-        <table width="100%">
-            <thead>
-                <tr valign="top">
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr valign="top">
-                    <td>
-                        <ul>
-                            <li><a href="account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="course_content.html">Home</a></li>
-                            <li><a href="#">Modules</a></li>
-                            <li><a href="#">Piazza</a></li>
-                            <li><a href="#">Zoom Meetings</a></li>
-                            <li><a href="../kanbas/assignments/index.html">Assignments</a></li>
-                            <li><a href="#">Quizzes</a></li>
-                            <li><a href="grades.html">Grades</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Panopto Video</a></li>
-                            <li><a href="#">Discussions</a></li>
-                            <li><a href="#">Announcements</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li><a href="#">Rubrics</a></li>
-                            <li><a href="#">Outcomes</a></li>
-                            <li><a href="#">Collaborations</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="settings.html">Settings</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="course_details_settings.html">Course Details</a></li>
-                            <li><a href="#">Sections</a></li>
-                            <li><a href="navigation.html">Navigation</a></li>
-                            <li><a href="#">Apps</a></li>
-                            <li><a href="#">Feature Options</a></li>
-                            <li><a href="#">Integrations</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p>Drag and drop items to reorder them in the course navigation</p>
-                        <ul>
-                            <li>Home</li>
-                            <li>Modules</li>
-                            <li>Piazza</li>
-                            <li>Zoom Meetings</li>
-                            <li>Assignments</li>
-                            <li>Quizzes</li>
-                            <li>Grades</li>
-                            <li>People</li>
-                            <li>Panopto Video</li>
-                        </ul>
+        <div class="sidebar">
+            <div>
+                <img src="images/northeastern-logo.jpeg" width="70" height="75">
+            </div>
+            <a href="../kanbas/profile/index.html">
+                <div class="icon-list">
+                    <i class="fa fa-user fa-1x" aria-hidden="true" style="color:  #d8220e; margin-bottom: 5px;"></i>
+                    <span>Account</span>
+                </div>
+            </a>
+            <a href="dashboard.html">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-gauge fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <div class="link-bg-color-selected row">
+                <a href="courses.html">
+                    <span class="fas fa-light fa-book fa-1x" style="color: black; margin-bottom: 5px;"></span>
+                    <span>Courses</span>
+                </a>
+            </div>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-calendar-days fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Calendar</span>
+                </div>
+            </a>
 
-                        <p>Drag items here to hide them from students</p>
-                        <small>Disabling most pages will cause students who visit those pages to be redirected 
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-inbox fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-clock fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-tv fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-circle-arrow-right fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="icon-list">
+                    <i class="fas fa-light fa-question fa-1x" style="color: #d8220e; margin-bottom: 5px;"></i>
+                    <span>Help</span>
+                </div>
+            </a>
+        </div>
+        <div class="assignment-heading">
+            <i class="fas fa-light fa-grip-lines fa-2x" style="color:  rgb(216, 7, 7);; padding: 10px;"></i>
+            <nav style="--bs-breadcrumb-divider: '>'; padding-top: 10px;" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color:  rgb(216, 7, 7);; font-size: 20px;">CS5610.11550.202410</a></li>
+                <li class="breadcrumb-item" style = "color: black; font-size: 20px;" aria-current="page">Settings</li>
+                </ol>
+            </nav>
+        </div> 
+        <hr style="width:100%;text-align:left;margin-left:110px">
+        <div class="course-navigation">
+            
+            <a href="course_content.html">
+                <div class="nav-list">
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span style="margin-right: 8px;">Modules</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Piazza</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Zoom Meetings</span>
+                </div>
+                
+            </a>
+            
+            <a href="../kanbas/assignments/index.html">
+                <div class="nav-list">
+                    <span>Assignments</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Quizzes</span>
+                </div>
+                
+            </a>
+            <a href="grades.html">
+                <div class="nav-list">
+                    <span>Grades</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>People</span>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Panopto Video</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Discussions</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Announcements</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Pages</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Files</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Rubrics</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Outcomes</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Collaborations</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-list">
+                    <span>Syllabus</span>
+                </div>
+            </a>
+            <div class="selected-profile" style="border-left: solid; border-color: black; border-width: medium; ">
+                <a href="settings.html">
+                    <div class="nav-list">
+                        <span>Settings</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div style="margin-left: 350px; width: 1000px;">
+            <ul class="settings-tabs nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">Course Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active settings-selected" href="navigation.html">Navigation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Feature Options</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Integrations</a>
+                </li>
+            </ul>
+            <br/>
+            <div class="list-group">
+                <p>Drag and drop items to reorder them in the course navigation</p>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <p>Home</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Modules</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Piazza</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Zoom Meetings</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Assignments</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Quizzes</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Grades</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>People</p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 40px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Panopto Video</p>
+                </li>
+            </div>
+            <br/>
+            <div class="list-group">
+                <p>Drag items here to hide them from students<br/>
+                        <small>Disabling most pages will cause students who visit those pages<br/> to be redirected 
                             to the course home page
-                        </small>
-                        <ul>
-                            <li>Chat</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>SCORM</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Attendance</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Barnes and Noble Bookstore</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Digication</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Top Hat</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Syllabus</li>
-                            <small><i>Page disbaled, will redirect course home page</i></small>
-                            <li>Perusall</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Microsoft Teams Meetings</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>FACT Reporting and Photo Roster</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Progress Reports (Navigate)</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Microsoft Teams for Canvas</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>VHL Central</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Gradescope 1.3</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>Credentials</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                            <li>iClicker</li>
-                            <small><i>Page disbaled, won't appear in navigation</i></small>
-                        </ul>
-                        <button type="submit">Save</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </small></p>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Chat<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>SCORM<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Attendance<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Barnes and Noble Bookstore<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Digication<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Top Hat<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Syllabus<br/>
+                    <small class="ps-3"><i>Page disbaled, will redirect to course home page</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Perusall<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Microsoft Teams Meetings<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>FACT Reporting and Photo Roster<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Progress Reports (Navigate)<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Microsoft Teams for Canvas<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>VHL Central<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Gradescope 1.3<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>Credentials<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+                <li class="list-group-item rounded-0 ps-4" style="width: 500px; height: 60px;">
+                    <i class="fas fa-regular fa-ellipsis-vertical float-end"></i>
+                    <p>iClicker<br/>
+                    <small class="ps-3"><i>Page disbaled, won't appear in navigation</i></small></p>
+                </li>
+            </div>
+            <button 
+                type="submit" class="btn btn-danger mb-2 float-start mt-3">
+                    Save
+                </button>
+        </div>
     </body>
-</html>
+</html>                 
